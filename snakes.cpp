@@ -3,6 +3,7 @@
 #include<stdio.h>
 #include<windows.h>
 #include<stdlib.h>
+#include<iostream>
 int endfunc(int e);
 int main(){
     int gd,gm,rx=200,ry=200,x,y,d/*dirction*/,f=1/*Food eaten*/,dir=1/*direction*/;
