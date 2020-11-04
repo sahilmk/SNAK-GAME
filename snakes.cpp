@@ -19,18 +19,18 @@ delay(5000);
 for(;;){
 
     setfillstyle(1,0);
-        bar(0,0,640,480);
+        bar(0,0,640,480);//display
         setfillstyle(1,2);
-   bar(0,0,640,10);
-    bar(0,0,10,480);
-    bar(0,480,640,470);
-    bar(630,10,640,480);
+   bar(0,0,640,10);//upper line
+    bar(0,0,10,480);//left line
+    bar(0,480,640,470);//bottom line
+    bar(630,10,640,480);//left line
    // food taken?
    if(x==rx && y==ry ){
 
         f=f+1;
     setfillstyle(1,0);
-    bar(rx,ry,rx+10,ry+10);
+    bar(rx,ry,rx+10,ry+10);//food
 
     //make food
    do {
@@ -44,7 +44,7 @@ for(;;){
         setfillstyle(1,2);
 
           }
-    bar(rx,ry,rx+10,ry+10);
+    bar(rx,ry,rx+10,ry+10);//food
 
     if(GetAsyncKeyState(VK_RIGHT)){d=1;}
     else if(GetAsyncKeyState(VK_LEFT)){ d=2;}
@@ -78,7 +78,7 @@ for(;;){
        y= y+10;
         break;
     }
-bar(x,y,x+10,y+10);
+bar(x,y,x+10,y+10);//snake
 delay(100);
 printf("%d     %d    %d   %d   \n",x,y,rx,ry);
 if(x>=640 || x<=0|| y<=0 || y>=480){
