@@ -6,7 +6,7 @@
 #include<iostream>
 int endfunc(int e);
 int main(){
-    int gd,gm,rx=200,ry=200,x,y,d/*dirction*/,f=1/*Food eaten*/,dir=1/*direction*/;
+    int gd,gm,rx=200,ry=200/*FOOD dimension*/,x,y,d/*dirction*/,f=1/*Food eaten*/,dir=1/*direction*/;
    // srand(time(NULL));
     detectgraph(&gd,&gm);
     initgraph(&gd,&gm,"");
