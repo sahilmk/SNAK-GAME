@@ -4,6 +4,8 @@
 #include<windows.h>
 #include<stdlib.h>
 #include<iostream>
+
+using namespace std;
 int endfunc(int e);
 int main(){
     int gd,gm,rx=200,ry=200/*FOOD dimension*/,x,y,d/*dirction*/,f=1/*Food eaten*/,dir=1/*direction*/;
@@ -80,7 +82,8 @@ for(;;){
     }
 bar(x,y,x+10,y+10);//snake
 delay(100);
-printf("%d     %d    %d   %d   \n",x,y,rx,ry);
+//printf("%d     %d    %d   %d   \n",x,y,rx,ry);
+cout<< x << y << rx << ry <<endl;
 if(x>=640 || x<=0|| y<=0 || y>=480){
     endfunc(f);
     break;
@@ -92,8 +95,10 @@ int endfunc(int e){
     e=e-2;
     bar(0,0,640,470);
     system("cls");
-    printf("You died outside the boundary!!!\n");
-    printf("Your score is : %d\n", e);
+    //printf("You died outside the boundary!!!\n");
+    cout<< "You died outside the boundary!!!\n";
+    //printf("Your score is : %d\n", e);
+    cout<< "Your score is :" << e;
     getch();
 }
 
