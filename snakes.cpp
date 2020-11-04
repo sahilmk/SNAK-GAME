@@ -1,6 +1,5 @@
 #include<graphics.h>
 #include<time.h>
-//#include<stdio.h>
 #include<iostream>
 #include<windows.h>
 #include<stdlib.h>
